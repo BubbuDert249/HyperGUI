@@ -5,5 +5,5 @@ if $fileopened = *.lbix [
   file rename cxrender/bubbuos/temp/lbixunzipped/main.lbimg main.png
   binary renamemagic $tempdir/lbixunzipped/main.png binary.magic.png
   img png $tempdir/lbixunzipped/main.png
-  target exec "./lbscript.bsc"
+  lbscript exec %tempdir/lbixunzipped/script.lbscript
 ]
