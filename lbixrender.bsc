@@ -6,3 +6,4 @@ if $fileopened = *.lbix [
   binary renamemagic $tempdir/lbixunzipped/main.png binary.magic.png
   img png $tempdir/lbixunzipped/main.png
   target exec "./lbscript.bsc"
+]
