@@ -1,0 +1,8 @@
+!$HYPERBUBBU2, private sysapp
+  uninstallaction=$erroruninstall
+streamapp = *.stream
+  do a.gf.vkrender
+if hypergui1/6 onFail run [ Vulkan1.4Translate ]\
+mime register ".stream" "application/octet-stream"
+backwardcompatibility "hyperbubbu1"
+  streamappd.sys
