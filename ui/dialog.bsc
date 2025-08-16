@@ -1,2 +1,6 @@
 drawbox(x=0,y=0,width=167,height=100,header=true)
-buttons(regularbtn,text="OK",action=$nextline)
+buttons(type=regularbtn,text="OK",action=$nextline)
+if textbox [
+  drawtxtbox
+  $txtboxinput = txtbox
+]
