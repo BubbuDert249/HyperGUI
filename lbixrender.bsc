@@ -1,0 +1,8 @@
+if $fileopened = *.lbix [
+  file copy -cfx=1 $fileopened cxrender/bubbuos/temp
+  file rename -cfx=1 cxrender/bubbuos/temp/*.lbix lbix.zip
+  target exec "cxrender/bubbuos/dev/tools/unzip.bin" --silent cxrender/bubbuos/temp/lbix.zip cxrender/bubbuos/temp/lbixunzipped
+  file rename cxrender/bubbuos/temp/lbixunzipped/main.lbimg main.png
+  binary renamemagic $tempdir/lbixunzipped/main.png binary.magic.png
+  img png $tempdir/lbixunzipped/main.png
+  target exec "./lbscript.bsc"
